@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		E9E229BD24609FAF001C4A8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229BC24609FAF001C4A8D /* AppDelegate.swift */; };
 		E9E229BF24609FAF001C4A8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229BE24609FAF001C4A8D /* SceneDelegate.swift */; };
-		E9E229C124609FAF001C4A8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229C024609FAF001C4A8D /* ViewController.swift */; };
-		E9E229C424609FAF001C4A8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E229C224609FAF001C4A8D /* Main.storyboard */; };
 		E9E229C624609FB0001C4A8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E229C524609FB0001C4A8D /* Assets.xcassets */; };
 		E9E229C924609FB0001C4A8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E229C724609FB0001C4A8D /* LaunchScreen.storyboard */; };
+		E9E229D12460A002001C4A8D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D02460A002001C4A8D /* MainViewController.swift */; };
+		E9E229D32460A048001C4A8D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D22460A048001C4A8D /* MainView.swift */; };
+		E9E229D52460A69C001C4A8D /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D42460A69C001C4A8D /* UIKitExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9E229B924609FAF001C4A8D /* PlaidApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaidApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E229BC24609FAF001C4A8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E229BE24609FAF001C4A8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9E229C024609FAF001C4A8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9E229C324609FAF001C4A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9E229C524609FB0001C4A8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E229C824609FB0001C4A8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E229CA24609FB0001C4A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E229D02460A002001C4A8D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E9E229D22460A048001C4A8D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E9E229D42460A69C001C4A8D /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		E9E229BB24609FAF001C4A8D /* PlaidApp */ = {
 			isa = PBXGroup;
 			children = (
+				E9E229D62460A6B6001C4A8D /* Utilities */,
+				E9E229D72460A6BE001C4A8D /* Views */,
+				E9E229D82460A6C3001C4A8D /* Controllers */,
 				E9E229BC24609FAF001C4A8D /* AppDelegate.swift */,
 				E9E229BE24609FAF001C4A8D /* SceneDelegate.swift */,
-				E9E229C024609FAF001C4A8D /* ViewController.swift */,
-				E9E229C224609FAF001C4A8D /* Main.storyboard */,
 				E9E229C524609FB0001C4A8D /* Assets.xcassets */,
 				E9E229C724609FB0001C4A8D /* LaunchScreen.storyboard */,
 				E9E229CA24609FB0001C4A8D /* Info.plist */,
 			);
 			path = PlaidApp;
+			sourceTree = "<group>";
+		};
+		E9E229D62460A6B6001C4A8D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E9E229D42460A69C001C4A8D /* UIKitExtensions.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		E9E229D72460A6BE001C4A8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9E229D22460A048001C4A8D /* MainView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E9E229D82460A6C3001C4A8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9E229D02460A002001C4A8D /* MainViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +154,6 @@
 			files = (
 				E9E229C924609FB0001C4A8D /* LaunchScreen.storyboard in Resources */,
 				E9E229C624609FB0001C4A8D /* Assets.xcassets in Resources */,
-				E9E229C424609FAF001C4A8D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E229C124609FAF001C4A8D /* ViewController.swift in Sources */,
+				E9E229D12460A002001C4A8D /* MainViewController.swift in Sources */,
+				E9E229D32460A048001C4A8D /* MainView.swift in Sources */,
 				E9E229BD24609FAF001C4A8D /* AppDelegate.swift in Sources */,
 				E9E229BF24609FAF001C4A8D /* SceneDelegate.swift in Sources */,
+				E9E229D52460A69C001C4A8D /* UIKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E9E229C224609FAF001C4A8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9E229C324609FAF001C4A8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9E229C724609FB0001C4A8D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
