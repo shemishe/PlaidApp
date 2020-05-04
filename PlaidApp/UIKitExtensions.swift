@@ -58,7 +58,7 @@ extension UIView {
         let label = UILabel()
         label.text = string
         view.addSubview(label)
-        label.anchorwithConstant(top: nil, bottom: nil, leading: view.leadingAnchor, trailing: nil, paddingTop: 0, paddingBottom: 0, paddingLeading: 8, paddingTrailing: 0, width: 50, height: 24)
+        label.anchorwithConstant(top: nil, bottom: nil, leading: view.leadingAnchor, trailing: nil, paddingTop: 0, paddingBottom: 0, paddingLeading: 8, paddingTrailing: 0, width: 90, height: 24)
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
         view.addSubview(textField)
@@ -72,5 +72,17 @@ extension UIView {
         separatorView.anchorwithConstant(top: nil, bottom: textField.bottomAnchor, leading: textField.leadingAnchor, trailing: textField.trailingAnchor, paddingTop: 0, paddingBottom: 0, paddingLeading: 0, paddingTrailing: 0, width: 0, height: 0.75)
 
         return view
+    }
+}
+
+extension UITextField {
+    func textField(withPlaceholder placeholder: String) -> UITextField {
+        let tf = UITextField()
+        tf.borderStyle = .none
+        tf.textColor = .black
+        tf.isSecureTextEntry = false
+        tf.placeholder = placeholder
+        tf.textAlignment = .center
+        return tf
     }
 }

@@ -32,6 +32,8 @@ class MainView: UIView {
     }()
     
     /* TEXTFIELDS */
+    
+    /// NAME
     lazy var nameView: UIView = {
         let view = UIView()
         return view.textFieldContainerView(view: view, "Name", nameTextField)
@@ -39,12 +41,10 @@ class MainView: UIView {
     
     lazy var nameTextField: UITextField = {
         let tf                  = UITextField()
-        tf.isSecureTextEntry    = false
-        tf.placeholder          = "Ex: The Best Name Ever"
-        tf.borderStyle          = .none
-        return tf
+        return tf.textField(withPlaceholder: "The Best Name Ever")
     }()
     
+    /// EMAIL
     lazy var emailView: UIView = {
         let view = UIView()
         return view.textFieldContainerView(view: view, "Email", emailTextField)
@@ -52,11 +52,75 @@ class MainView: UIView {
     
     lazy var emailTextField: UITextField = {
         let tf = UITextField()
-        tf.isSecureTextEntry    = false
-        tf.placeholder          = "Ex: wowcoolemail@gmail.com"
-        tf.borderStyle          = .none
-        return tf
+        return tf.textField(withPlaceholder: "wowcoolemail@gmail.com")
     }()
+
+    /// RESUME
+    lazy var resumeView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "Resume", resumeTextField)
+    }()
+    
+    lazy var resumeTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "Ready, set, resume!")
+    }()
+    
+    /// PHONE
+    lazy var phoneView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "Phone", phoneTextField)
+    }()
+    
+    lazy var phoneTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "Hotling Bling")
+    }()
+    
+    /// GITHUB
+    lazy var githubView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "GitHub", githubTextField)
+    }()
+    
+    lazy var githubTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "The Repository")
+    }()
+    
+    /// LINKEDIN
+    lazy var linkedInView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "LinkedIn", linkedInTextField)
+    }()
+    
+    lazy var linkedInTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "Hit me with the link!")
+    }()
+    
+    /// LOCATION
+    lazy var locationView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "Location", locationTextField)
+    }()
+    
+    lazy var locationTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "My GPS")
+    }()
+    
+    /// LANGUAGES
+    lazy var languagesView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "Languages", languagesTextField)
+    }()
+    
+    lazy var languagesTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "Audentes fortuna iuvat")
+    }()
+    
     
     /* POST BUTTON */
     lazy var postButton: UIButton = {
@@ -95,10 +159,28 @@ class MainView: UIView {
         byShermanLabel.anchorwithConstant(top: myAppLabel.bottomAnchor, bottom: nil, leading: nil, trailing: nil, paddingTop: 0, paddingBottom: 0, paddingLeading: 0, paddingTrailing: 0, width: 0, height: 0)
         
         addSubview(nameView)
-        nameView.anchorwithConstant(top: byShermanLabel.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 20, paddingBottom: 0, paddingLeading: 25, paddingTrailing: 25, width: 0, height: 30)
+        nameView.anchorwithConstant(top: byShermanLabel.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 20, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
     
         addSubview(emailView)
-        emailView.anchorwithConstant(top: nameView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 25, paddingTrailing: 25, width: 0, height: 30)
+        emailView.anchorwithConstant(top: nameView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(resumeView)
+        resumeView.anchorwithConstant(top: emailView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(phoneView)
+        phoneView.anchorwithConstant(top: resumeView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(githubView)
+        githubView.anchorwithConstant(top: phoneView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(linkedInView)
+        linkedInView.anchorwithConstant(top: githubView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(locationView)
+        locationView.anchorwithConstant(top: linkedInView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(languagesView)
+        languagesView.anchorwithConstant(top: locationView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
         
         addSubview(postButton)
         postButton.centerX(inView: self)
