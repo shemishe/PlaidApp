@@ -121,6 +121,28 @@ class MainView: UIView {
         return tf.textField(withPlaceholder: "Audentes fortuna iuvat")
     }()
     
+    /// WANT TO LEARN NEXT
+    lazy var learnView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "Want to learn next", learnTextField)
+    }()
+    
+    lazy var learnTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "ABL--Always be learning")
+    }()
+    
+    /// PLAIDAPP REPO
+    lazy var repoView: UIView = {
+        let view = UIView()
+        return view.textFieldContainerView(view: view, "Repo to this App", repoTextField)
+    }()
+    
+    lazy var repoTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceholder: "Show me the money!")
+    }()
+    
     
     /* POST BUTTON */
     lazy var postButton: UIButton = {
@@ -181,6 +203,12 @@ class MainView: UIView {
         
         addSubview(languagesView)
         languagesView.anchorwithConstant(top: locationView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        
+        addSubview(learnView)
+        learnView.anchorwithConstant(top: languagesView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 40)
+        
+        addSubview(repoView)
+        repoView.anchorwithConstant(top: learnView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 40)
         
         addSubview(postButton)
         postButton.centerX(inView: self)

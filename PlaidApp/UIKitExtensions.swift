@@ -57,8 +57,10 @@ extension UIView {
         
         let label = UILabel()
         label.text = string
+        label.numberOfLines = 0
+        label.sizeToFit()
         view.addSubview(label)
-        label.anchorwithConstant(top: nil, bottom: nil, leading: view.leadingAnchor, trailing: nil, paddingTop: 0, paddingBottom: 0, paddingLeading: 8, paddingTrailing: 0, width: 90, height: 24)
+        label.anchorwithConstant(top: nil, bottom: nil, leading: view.leadingAnchor, trailing: nil, paddingTop: 0, paddingBottom: 0, paddingLeading: 8, paddingTrailing: 0, width: 90, height: 48)
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
         view.addSubview(textField)
