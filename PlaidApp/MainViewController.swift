@@ -87,7 +87,7 @@ class MainViewController: UIViewController {
             }
             
             if let response = response {
-                print(response)
+                print("This is the response!", response)
             }
             
             if let data = data {
