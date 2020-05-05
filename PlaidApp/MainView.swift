@@ -181,7 +181,7 @@ class MainView: UIView {
         byShermanLabel.anchorwithConstant(top: myAppLabel.bottomAnchor, bottom: nil, leading: nil, trailing: nil, paddingTop: 0, paddingBottom: 0, paddingLeading: 0, paddingTrailing: 0, width: 0, height: 0)
         
         addSubview(nameView)
-        nameView.anchorwithConstant(top: byShermanLabel.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 20, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
+        nameView.anchorwithConstant(top: byShermanLabel.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 40, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
     
         addSubview(emailView)
         emailView.anchorwithConstant(top: nameView.bottomAnchor, bottom: nil, leading: leadingAnchor, trailing: trailingAnchor, paddingTop: 15, paddingBottom: 0, paddingLeading: 15, paddingTrailing: 15, width: 0, height: 30)
@@ -212,6 +212,6 @@ class MainView: UIView {
         
         addSubview(postButton)
         postButton.centerX(inView: self)
-        postButton.anchorwithConstant(top: nil, bottom: safeAreaLayoutGuide.bottomAnchor, leading: nil, trailing: nil, paddingTop: 0, paddingBottom: 25, paddingLeading: 0, paddingTrailing: 0, width: 100, height: 0)
+        postButton.anchorwithConstant(top: nil, bottom: safeAreaLayoutGuide.bottomAnchor, leading: nil, trailing: nil, paddingTop: 0, paddingBottom: 40, paddingLeading: 0, paddingTrailing: 0, width: 100, height: 0)
     }
 }

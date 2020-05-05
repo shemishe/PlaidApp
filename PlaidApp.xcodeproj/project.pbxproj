@@ -14,6 +14,7 @@
 		E9E229D12460A002001C4A8D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D02460A002001C4A8D /* MainViewController.swift */; };
 		E9E229D32460A048001C4A8D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D22460A048001C4A8D /* MainView.swift */; };
 		E9E229D52460A69C001C4A8D /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D42460A69C001C4A8D /* UIKitExtensions.swift */; };
+		E9E229DA24611AB1001C4A8D /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E229D924611AB1001C4A8D /* Body.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E9E229D02460A002001C4A8D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E9E229D22460A048001C4A8D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E9E229D42460A69C001C4A8D /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		E9E229D924611AB1001C4A8D /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				E9E229D62460A6B6001C4A8D /* Utilities */,
+				E9E229DB24612F6B001C4A8D /* Model */,
 				E9E229D72460A6BE001C4A8D /* Views */,
 				E9E229D82460A6C3001C4A8D /* Controllers */,
 				E9E229BC24609FAF001C4A8D /* AppDelegate.swift */,
@@ -92,6 +95,14 @@
 				E9E229D02460A002001C4A8D /* MainViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E9E229DB24612F6B001C4A8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9E229D924611AB1001C4A8D /* Body.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				E9E229D12460A002001C4A8D /* MainViewController.swift in Sources */,
 				E9E229D32460A048001C4A8D /* MainView.swift in Sources */,
 				E9E229BD24609FAF001C4A8D /* AppDelegate.swift in Sources */,
+				E9E229DA24611AB1001C4A8D /* Body.swift in Sources */,
 				E9E229BF24609FAF001C4A8D /* SceneDelegate.swift in Sources */,
 				E9E229D52460A69C001C4A8D /* UIKitExtensions.swift in Sources */,
 			);
